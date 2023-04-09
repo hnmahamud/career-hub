@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Lottie from "lottie-react";
 import jobHunting from "../../assets/jobHunting.json";
 import { useLoaderData } from "react-router-dom";
 import JobCategory from "../JobCategory/JobCategory";
+import FeaturedJob from "../featuredJob/featuredJob";
 
 const Home = () => {
-  const { data: jobCategoryData } = useLoaderData();
+  const [jobCategoryData, featuredJobData] = useLoaderData();
+
+  const [featuredJob, setFeaturedJobData] = useState(featuredJobData);
+  const [seeAll, setSeeAll] = useState(false);
+
   return (
     <div>
       {/* Header Section */}
@@ -37,8 +42,7 @@ const Home = () => {
             Job Category List
           </h3>
           <p>
-            Explore thousands of job opportunities with all the information you
-            need. Its your future
+            Career choices are important decisions that can shape your future.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -48,6 +52,34 @@ const Home = () => {
               singleData={singleData}
             ></JobCategory>
           ))}
+        </div>
+      </div>
+
+      {/* Featured Jobs Section */}
+      <div className="w-[95%] md:w-[80%] mx-auto pb-16 md:pb-32 space-y-8">
+        <div className="text-center space-y-4">
+          <h3 className="text-2xl md:text-4xl font-extrabold">Featured Jobs</h3>
+          <p>
+            In the world of employment, featured jobs are the stars that light
+            up your career path and lead you towards your dreams.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {featuredJob
+            .slice(0, seeAll ? featuredJob.length : 4)
+            .map((singleData) => (
+              <FeaturedJob
+                key={singleData.id}
+                singleData={singleData}
+              ></FeaturedJob>
+            ))}
+        </div>
+        <div className="text-center">
+          {seeAll || (
+            <button onClick={() => setSeeAll(true)} className="my-btn">
+              See All Jobs
+            </button>
+          )}
         </div>
       </div>
     </div>
