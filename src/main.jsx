@@ -8,6 +8,7 @@ import AppliedJob from "./components/Home/AppliedJob/AppliedJob";
 import Statistics from "./components/Statistics/Statistics";
 import Blogs from "./components/Blogs/Blogs";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
+import axios from "axios";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => axios.get("jobCategory.json"),
       },
       {
         path: "/applied-job",

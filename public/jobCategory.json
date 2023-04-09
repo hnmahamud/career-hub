@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "logo": "https://cdn-icons-png.flaticon.com/512/1256/1256194.png?w=740&t=st=1681070590~exp=1681071190~hmac=38c597e8d93387b2c46c290ef1f9635714965cb9a94986349953aeb586f85b89",
+    "name": "Account & Finance",
+    "jobs_available": 10
+  },
+  {
+    "id": "2",
+    "logo": "https://cdn-icons-png.flaticon.com/512/610/610076.png?w=740&t=st=1681070683~exp=1681071283~hmac=722aa880aaa80752b4397a718148265bdec2d3bfe7e7771a626eeb759c5e337b",
+    "name": "Creative Design",
+    "jobs_available": 5
+  },
+  {
+    "id": "3",
+    "logo": "https://cdn-icons-png.flaticon.com/512/164/164429.png?w=740&t=st=1681070745~exp=1681071345~hmac=8dc6c0f2ca044a3cd17d545119756924f542b20834f121185af78356d017d121",
+    "name": "Marketing & Sales",
+    "jobs_available": 20
+  },
+  {
+    "id": "4",
+    "logo": "https://cdn-icons-png.flaticon.com/512/1246/1246248.png?w=740&t=st=1681070855~exp=1681071455~hmac=2ef2af6e1d0126df7449ff05b174aa3069bfcfe304cb214a688fb7ecae4d8200",
+    "name": "Engineering Job",
+    "jobs_available": 15
+  }
+]
