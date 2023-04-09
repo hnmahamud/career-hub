@@ -25,7 +25,7 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="flex flex-col gap-4 text-subTitle dropdown-content mt-3 p-2 shadow bg-headerBg w-52"
+              className="flex flex-col gap-4 text-subTitle dropdown-content mt-3 p-2 shadow bg-base-200 w-52"
             >
               <li>
                 <NavLink
