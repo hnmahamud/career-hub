@@ -69,7 +69,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="text-title text-3xl font-extrabold">JobPoint</a>
+          <a className="text-3xl font-extrabold">JobPoint</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="text-subTitle flex gap-8">
@@ -116,7 +116,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button type="button" class="my-btn">
+          <button type="button" className="my-btn">
             Start Applying
           </button>
         </div>
