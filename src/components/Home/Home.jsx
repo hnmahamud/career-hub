@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import findJob from "../../assets/jobHunting.json";
+import jobHunting from "../../assets/jobHunting.json";
 
 const Home = () => {
   return (
@@ -21,7 +21,7 @@ const Home = () => {
           <button className="my-btn">Get Started</button>
         </div>
         <div className="grow-0">
-          <Lottie animationData={findJob} loop={true} />
+          <Lottie animationData={jobHunting} loop={true} />
         </div>
       </div>
     </div>
