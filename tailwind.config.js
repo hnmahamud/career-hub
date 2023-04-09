@@ -29,8 +29,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        clifford: "#da373d",
-        headerBg: "rgba(152, 115, 255, 0.05)",
         title: "#1A1919",
         subTitle: "#757575",
         gFrom: "#7E90FE",
