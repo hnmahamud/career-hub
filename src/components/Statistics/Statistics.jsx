@@ -14,7 +14,7 @@ const Statistics = () => {
   const { data: assignmentData } = useLoaderData();
   return (
     <div className="w-[95%] md:w-[80%] mx-auto pt-16 md:py-32">
-      <ResponsiveContainer width={"100%"} aspect={4}>
+      <ResponsiveContainer width={"98%"} height={300}>
         <AreaChart
           width={500}
           height={500}
