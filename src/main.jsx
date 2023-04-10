@@ -4,11 +4,11 @@ import "./index.css";
 import Root from "./components/Layout/Root";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home/Home";
-import AppliedJob from "./components/Home/AppliedJob/AppliedJob";
 import Statistics from "./components/Statistics/Statistics";
 import Blogs from "./components/Blogs/Blogs";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import jobDataLoader from "./loaders/jobDataLoader";
+import AppliedJob from "./components/AppliedJob/AppliedJob";
 
 const router = createBrowserRouter([
   {

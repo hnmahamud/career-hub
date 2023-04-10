@@ -5,3 +5,7 @@
 .my-btn {
   @apply text-white bg-gradient-to-r from-gFrom from-0% to-gTo to-100% focus:ring-1 focus:outline-none focus:ring-gFrom font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2;
 }
+
+.my-btn2 {
+  @apply text-blue-700 border border-blue-700 font-medium rounded-sm text-sm px-5 py-2 text-center;
+}

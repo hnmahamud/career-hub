@@ -936,11 +936,6 @@
   "resolved" "https://registry.npmjs.org/object-hash/-/object-hash-3.0.0.tgz"
   "version" "3.0.0"
 
-"object-path@0.6.0":
-  "integrity" "sha512-fxrwsCFi3/p+LeLOAwo/wyRMODZxdGBtUlWRzsEpsUVrisZbEfZ21arxLGfaWfcnqb8oHPNihIb4XPE8CQPN5A=="
-  "resolved" "https://registry.npmjs.org/object-path/-/object-path-0.6.0.tgz"
-  "version" "0.6.0"
-
 "once@^1.3.0":
   "integrity" "sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w=="
   "resolved" "https://registry.npmjs.org/once/-/once-1.4.0.tgz"
@@ -1152,12 +1147,10 @@
   dependencies:
     "is-arrayish" "^0.3.1"
 
-"sort-by@^1.2.0":
-  "integrity" "sha512-aRyW65r3xMnf4nxJRluCg0H/woJpksU1dQxRtXYzau30sNBOmf5HACpDd9MZDhKh7ALQ5FgSOfMPwZEtUmMqcg=="
-  "resolved" "https://registry.npmjs.org/sort-by/-/sort-by-1.2.0.tgz"
-  "version" "1.2.0"
-  dependencies:
-    "object-path" "0.6.0"
+"sort-by@^0.0.2":
+  "integrity" "sha512-iOX5oHA4a0eqTMFiWrHYqv924UeRKFBLhym7iwSVG37Egg2wApgZKAjyzM9WZjMwKv6+8Zi+nIaJ7FYsO9EkoA=="
+  "resolved" "https://registry.npmjs.org/sort-by/-/sort-by-0.0.2.tgz"
+  "version" "0.0.2"
 
 "source-map-js@^1.0.2":
   "integrity" "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw=="
