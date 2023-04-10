@@ -10,6 +10,7 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import AppliedJob from "./components/AppliedJob/AppliedJob";
 import JobDetails from "./components/JobDetails/JobDetails";
 import { categoryLoader, featuredLoader } from "./loaders/jobDataLoader";
+import axios from "axios";
 
 const router = createBrowserRouter([
   {
@@ -24,16 +25,17 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/job-details/:id",
-        element: <JobDetails></JobDetails>,
-      },
-      {
         path: "/applied-job",
         element: <AppliedJob></AppliedJob>,
       },
       {
+        path: "/job-details/:id",
+        element: <JobDetails></JobDetails>,
+      },
+      {
         path: "/statistics",
         element: <Statistics></Statistics>,
+        loader: () => axios.get("/assignmentMarks.json"),
       },
       {
         path: "/blogs",
