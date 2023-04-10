@@ -15,13 +15,12 @@ const Home = () => {
 
   return (
     <div>
-      {/* Header Section */}
+      {/* Banner Section */}
       <div className="bg-base-200">
         <div className="w-[95%] md:w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-4">
           <div className="grow space-y-8">
             <h1 className="text-2xl text-center md:text-left md:text-5xl font-extrabold pt-8 md:pt-0">
-              One Step <br className="hidden md:block" /> Closer To Your{" "}
-              <br className="hidden md:block" />
+              One Step <br className="hidden md:block" /> Closer To Your <br />
               <span className="text-gFrom">Dream Job</span>
             </h1>
             <p>

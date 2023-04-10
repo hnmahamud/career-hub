@@ -69,7 +69,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="text-3xl font-extrabold">JobPoint</a>
+          <h3 className="text-3xl font-extrabold">JobPoint</h3>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="text-subTitle flex gap-8">

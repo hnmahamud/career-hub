@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { addToDb, getDataFromDb } from "../../utilities/fakedb";
 import { toast } from "react-toastify";
+import vector1 from "../../assets/vector1.png";
+import vector2 from "../../assets/vector2.png";
 import {
   CurrencyDollarIcon,
   BriefcaseIcon,
@@ -55,74 +57,82 @@ const JobDetails = () => {
   };
 
   return (
-    <div className="w-[95%] md:w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 justify-between py-16 md:py-32">
-      <div className="md:col-span-2 space-y-4">
-        <p>
-          <strong>Job Description: </strong>
-          {job_description}
-        </p>
-        <p>
-          <strong>Job Responsibility: </strong>
-          {job_responsibility}
-        </p>
-        <p>
-          <strong>Educational Requirements:</strong> <br />
-          {educational_requirements}
-        </p>
-        <p>
-          <strong>Experiences: </strong> <br />
-          {experiences}
-        </p>
+    <>
+      {/* Banner Section */}
+      <div className="bg-base-200 text-center flex justify-between items-center">
+        <img className="h-16 md:h-32" src={vector1} alt="" />
+        <h3 className="text-xl font-extrabold py-10">Job Details</h3>
+        <img className="h-16 md:h-32 -mt-32" src={vector2} alt="" />
       </div>
-      <div className="md:col-span-1 bg-base-200 rounded-md">
-        <div className="flex flex-col p-6 space-y-8">
-          <div className="space-y-2">
-            <div className="border-b-2 border-gray-500">
-              <h3 className="text-xl font-extrabold">Job details</h3>
-            </div>
+      <div className="w-[95%] md:w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 justify-between py-16 md:py-32">
+        <div className="md:col-span-2 space-y-4">
+          <p>
+            <strong>Job Description: </strong>
+            {job_description}
+          </p>
+          <p>
+            <strong>Job Responsibility: </strong>
+            {job_responsibility}
+          </p>
+          <p>
+            <strong>Educational Requirements:</strong> <br />
+            {educational_requirements}
+          </p>
+          <p>
+            <strong>Experiences: </strong> <br />
+            {experiences}
+          </p>
+        </div>
+        <div className="md:col-span-1 bg-base-200 rounded-md">
+          <div className="flex flex-col p-6 space-y-8">
             <div className="space-y-2">
-              <p className="flex gap-2">
-                <BuildingOffice2Icon className="h-6 w-6 text-blue-500" />
-                <strong>Company:</strong> {company_name}
-              </p>
-              <p className="flex gap-2">
-                <CurrencyDollarIcon className="h-6 w-6 text-blue-500" />
-                <strong>Salary:</strong> {salary}
-              </p>
-              <p className="flex gap-2">
-                <BriefcaseIcon className="h-6 w-6 text-blue-500" />
-                <strong>Job Title:</strong> {job_title}
-              </p>
+              <div className="border-b-2 border-gray-500">
+                <h3 className="text-xl font-extrabold">Job details</h3>
+              </div>
+              <div className="space-y-2">
+                <p className="flex gap-2">
+                  <BuildingOffice2Icon className="h-6 w-6 text-blue-500" />
+                  <strong>Company:</strong> {company_name}
+                </p>
+                <p className="flex gap-2">
+                  <CurrencyDollarIcon className="h-6 w-6 text-blue-500" />
+                  <strong>Salary:</strong> {salary}
+                </p>
+                <p className="flex gap-2">
+                  <BriefcaseIcon className="h-6 w-6 text-blue-500" />
+                  <strong>Job Title:</strong> {job_title}
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="space-y-2">
-            <div className="border-b-2 border-gray-500">
-              <h3 className="text-xl font-extrabold">Contact Information</h3>
-            </div>
             <div className="space-y-2">
-              <p className="flex gap-2">
-                <PhoneIcon className="h-6 w-6 text-blue-500" />
-                <strong>Phone:</strong> {contact_information?.phone}
-              </p>
-              <p className="flex gap-2">
-                <AtSymbolIcon className="h-6 w-6 text-blue-500" />
-                <strong>Email:</strong> {contact_information?.email}
-              </p>
-              <p className="flex gap-2">
-                <MapPinIcon className="h-6 w-6 text-blue-500" />
-                <strong>Address:</strong> {location}
-              </p>
+              <div className="border-b-2 border-gray-500">
+                <h3 className="text-xl font-extrabold">Contact Information</h3>
+              </div>
+              <div className="space-y-2">
+                <p className="flex gap-2">
+                  <PhoneIcon className="h-6 w-6 text-blue-500" />
+                  <strong>Phone:</strong> {contact_information?.phone}
+                </p>
+                <p className="flex gap-2">
+                  <AtSymbolIcon className="h-6 w-6 text-blue-500" />
+                  <strong>Email:</strong> {contact_information?.email}
+                </p>
+                <p className="flex gap-2">
+                  <MapPinIcon className="h-6 w-6 text-blue-500" />
+                  <strong>Address:</strong> {location}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <button onClick={() => handleAddToDb(id)} className="my-btn w-full">
-            Apply Now
-          </button>
+          <div>
+            <button onClick={() => handleAddToDb(id)} className="my-btn w-full">
+              Apply Now
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
