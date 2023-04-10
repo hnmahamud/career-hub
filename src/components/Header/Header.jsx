@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -69,7 +69,9 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <h3 className="text-3xl font-extrabold">JobPoint</h3>
+          <Link to="/">
+            <h3 className="text-3xl font-extrabold">JobPoint</h3>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="text-subTitle flex gap-8">
