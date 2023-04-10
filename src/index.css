@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .my-btn {
-  @apply text-white bg-gradient-to-r from-gFrom from-0% to-gTo to-100% focus:ring-1 focus:outline-none focus:ring-gFrom font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2;
+  @apply text-white bg-gradient-to-r from-gFrom from-0% to-gTo to-100% focus:ring-1 focus:outline-none focus:ring-gFrom font-medium rounded-md text-sm px-5 py-2.5 text-center;
 }
 
 .my-btn2 {

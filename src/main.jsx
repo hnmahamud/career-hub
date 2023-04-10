@@ -7,19 +7,25 @@ import Home from "./components/Home/Home";
 import Statistics from "./components/Statistics/Statistics";
 import Blogs from "./components/Blogs/Blogs";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
-import jobDataLoader from "./loaders/jobDataLoader";
 import AppliedJob from "./components/AppliedJob/AppliedJob";
+import JobDetails from "./components/JobDetails/JobDetails";
+import { categoryLoader, featuredLoader } from "./loaders/jobDataLoader";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    loader: featuredLoader,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
+        loader: categoryLoader,
         element: <Home></Home>,
-        loader: jobDataLoader,
+      },
+      {
+        path: "/job-details/:id",
+        element: <JobDetails></JobDetails>,
       },
       {
         path: "/applied-job",

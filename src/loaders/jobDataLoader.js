@@ -1,17 +1,21 @@
-import axios from "axios";
-
-const jobDataLoader = async () => {
+export const categoryLoader = async () => {
   try {
-    const responseCategory = await axios.get("jobCategory.json");
-    const { data: jobCategoryData } = responseCategory;
+    const responseCategory = await fetch("../jobCategory.json");
+    const jobCategoryData = await responseCategory.json();
 
-    const responseFeatured = await axios.get("featuredJob.json");
-    const { data: featuredJobData } = responseFeatured;
-
-    return [jobCategoryData, featuredJobData];
+    return jobCategoryData;
   } catch (error) {
     console.log(error);
   }
 };
 
-export default jobDataLoader;
+export const featuredLoader = async () => {
+  try {
+    const responseFeatured = await fetch("../featuredJob.json");
+    const featuredJobData = await responseFeatured.json();
+
+    return featuredJobData;
+  } catch (error) {
+    console.log(error);
+  }
+};

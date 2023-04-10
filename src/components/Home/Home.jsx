@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Lottie from "lottie-react";
 import jobHunting from "../../assets/jobHunting.json";
 import { useLoaderData } from "react-router-dom";
 import JobCategory from "../JobCategory/JobCategory";
 import FeaturedJob from "../featuredJob/featuredJob";
+import { FeaturedContext } from "../Layout/Root";
 
 const Home = () => {
-  const [jobCategoryData, featuredJobData] = useLoaderData();
+  const jobCategoryData = useLoaderData();
+  const featuredJobData = useContext(FeaturedContext);
 
   const [featuredJob, setFeaturedJobData] = useState(featuredJobData);
   const [seeAll, setSeeAll] = useState(false);

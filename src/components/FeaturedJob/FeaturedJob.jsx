@@ -1,8 +1,10 @@
 import React from "react";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const FeaturedJob = ({ singleData }) => {
   const {
+    id,
     company_logo,
     job_title,
     company_name,
@@ -43,7 +45,9 @@ const FeaturedJob = ({ singleData }) => {
       </div>
 
       <div>
-        <button className="my-btn">View details</button>
+        <Link to={`/job-details/${id}`}>
+          <button className="my-btn">View details</button>
+        </Link>
       </div>
     </div>
   );
