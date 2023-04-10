@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { addToDb, getDataFromDb } from "../../utilities/fakedb";
+import { toast } from "react-toastify";
 import {
   CurrencyDollarIcon,
   BriefcaseIcon,
@@ -8,8 +10,6 @@ import {
   MapPinIcon,
   BuildingOffice2Icon,
 } from "@heroicons/react/24/outline";
-import { addToDb, getDataFromDb } from "../../utilities/fakedb";
-import { toast } from "react-toastify";
 
 const JobDetails = () => {
   const [singleJobData, setSingleJobData] = useState({});
@@ -18,12 +18,11 @@ const JobDetails = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const responseFeatured = await fetch("../featuredJob.json");
+        const responseFeatured = await fetch("/featuredJob.json");
         const featuredJobData = await responseFeatured.json();
         const foundData = featuredJobData.find(
           (singleData) => singleData.id === jobId
         );
-        console.log(foundData);
         setSingleJobData(foundData);
       } catch (error) {
         console.log(error);

@@ -1,6 +1,6 @@
 export const categoryLoader = async () => {
   try {
-    const responseCategory = await fetch("../jobCategory.json");
+    const responseCategory = await fetch("/jobCategory.json");
     const jobCategoryData = await responseCategory.json();
 
     return jobCategoryData;
@@ -11,7 +11,7 @@ export const categoryLoader = async () => {
 
 export const featuredLoader = async () => {
   try {
-    const responseFeatured = await fetch("../featuredJob.json");
+    const responseFeatured = await fetch("/featuredJob.json");
     const featuredJobData = await responseFeatured.json();
 
     return featuredJobData;
