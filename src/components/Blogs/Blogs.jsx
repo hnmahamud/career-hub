@@ -8,18 +8,21 @@ const Blogs = () => {
       {/* Banner Section */}
       <div className="bg-base-200 text-center flex justify-between items-center">
         <img className="h-16 md:h-32" src={vector1} alt="" />
-        <h3 className="text-xl font-extrabold py-10">Personal Blogs</h3>
+        <h3 className="text-gray-600 text-xl font-extrabold py-10">
+          Personal Blogs
+        </h3>
         <img className="h-16 md:h-32 -mt-32" src={vector2} alt="" />
       </div>
 
+      {/* Blogs Section */}
       <div className="w-[95%] md:w-[80%] mx-auto flex flex-col space-y-4 my-12">
-        <div className="card card-side border-2 rounded-sm">
+        <div className="card card-side border rounded-md shadow-md">
           <div className="col-span-2 card-body">
             <div className="flex flex-col space-y-4">
-              <h2 className="text-lg font-bold">
+              <h2 className="text-gray-600 text-lg font-bold">
                 When should you use context API?
               </h2>
-              <p>
+              <p className="text-subTitle">
                 The React Context API is ideal for scenarios where you want to
                 efficiently share data or state between multiple components,
                 manage frequently changing data, handle unrelated data, or deal
@@ -33,11 +36,13 @@ const Blogs = () => {
           </div>
         </div>
 
-        <div className="card card-side border-2 rounded-sm">
+        <div className="card card-side border rounded-md shadow-md">
           <div className="col-span-2 card-body">
             <div className="flex flex-col space-y-4">
-              <h2 className="text-lg font-bold">What is a custom hook?</h2>
-              <p>
+              <h2 className="text-gray-600 text-lg font-bold">
+                What is a custom hook?
+              </h2>
+              <p className="text-subTitle">
                 A custom hook in React is a reusable function that encapsulates
                 logic for specific behavior, abstracts it from components, and
                 promotes code reusability. It follows a naming convention of
@@ -53,11 +58,13 @@ const Blogs = () => {
           </div>
         </div>
 
-        <div className="card card-side border-2 rounded-sm">
+        <div className="card card-side border rounded-md shadow-md">
           <div className="col-span-2 card-body">
             <div className="flex flex-col space-y-4">
-              <h2 className="text-lg font-bold">What is useRef?</h2>
-              <p>
+              <h2 className="text-gray-600 text-lg font-bold">
+                What is useRef?
+              </h2>
+              <p className="text-subTitle">
                 useRef is a React hook for creating and managing mutable
                 references in functional components. It allows access to DOM
                 elements or other mutable values without causing re-renders.
@@ -69,11 +76,13 @@ const Blogs = () => {
           </div>
         </div>
 
-        <div className="card card-side border-2 rounded-sm">
+        <div className="card card-side border rounded-md shadow-md">
           <div className="col-span-2 card-body">
             <div className="flex flex-col space-y-4">
-              <h2 className="text-lg font-bold">What is useMemo?</h2>
-              <p>
+              <h2 className="text-gray-600 text-lg font-bold">
+                What is useMemo?
+              </h2>
+              <p className="text-subTitle">
                 useMemo is a React hook for memoization, caching the result of a
                 computation and returning the cached result when the inputs to
                 the computation have not changed. It helps prevent unnecessary

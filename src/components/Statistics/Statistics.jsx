@@ -19,10 +19,13 @@ const Statistics = () => {
       {/* Banner Section */}
       <div className="bg-base-200 text-center flex justify-between items-center">
         <img className="h-16 md:h-32" src={vector1} alt="" />
-        <h3 className="text-xl font-extrabold py-10">Assignment Statistics</h3>
+        <h3 className="text-gray-600 text-xl font-extrabold py-10">
+          Assignment Statistics
+        </h3>
         <img className="h-16 md:h-32 -mt-32" src={vector2} alt="" />
       </div>
 
+      {/* Chart Section */}
       <div className="w-[95%] md:w-[80%] mx-auto py-12">
         <ResponsiveContainer width={"98%"} height={300}>
           <AreaChart
@@ -49,7 +52,9 @@ const Statistics = () => {
           </AreaChart>
         </ResponsiveContainer>
         <div className="text-center">
-          <h3 className="text-lg font-semibold">Total Assignment</h3>
+          <p className="text-lg font-semibold text-subTitle">
+            Total Assignment
+          </p>
         </div>
       </div>
     </>

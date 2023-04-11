@@ -30,8 +30,6 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/"
-                  aria-label="Home"
-                  title="Home"
                   className={({ isActive }) => (isActive ? "text-gFrom" : "")}
                 >
                   Home
@@ -40,8 +38,6 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/applied-job"
-                  aria-label="Home"
-                  title="Home"
                   className={({ isActive }) => (isActive ? "text-gFrom" : "")}
                 >
                   Applied Job
@@ -50,8 +46,6 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/statistics"
-                  aria-label="Home"
-                  title="Home"
                   className={({ isActive }) => (isActive ? "text-gFrom" : "")}
                 >
                   Statistics
@@ -60,8 +54,6 @@ const Header = () => {
               <li>
                 <NavLink
                   to="/blogs"
-                  aria-label="Home"
-                  title="Home"
                   className={({ isActive }) => (isActive ? "text-gFrom" : "")}
                 >
                   Blogs
@@ -70,7 +62,7 @@ const Header = () => {
             </ul>
           </div>
           <Link to="/">
-            <h3 className="text-3xl font-extrabold">JobPoint</h3>
+            <h3 className="text-gray-600 text-3xl font-extrabold">JobPoint</h3>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -78,8 +70,6 @@ const Header = () => {
             <li>
               <NavLink
                 to="/"
-                aria-label="Home"
-                title="Home"
                 className={({ isActive }) => (isActive ? "text-gFrom" : "")}
               >
                 Home
@@ -88,8 +78,6 @@ const Header = () => {
             <li>
               <NavLink
                 to="/applied-job"
-                aria-label="Home"
-                title="Home"
                 className={({ isActive }) => (isActive ? "text-gFrom" : "")}
               >
                 Applied Job
@@ -98,8 +86,6 @@ const Header = () => {
             <li>
               <NavLink
                 to="/statistics"
-                aria-label="Home"
-                title="Home"
                 className={({ isActive }) => (isActive ? "text-gFrom" : "")}
               >
                 Statistics
@@ -108,8 +94,6 @@ const Header = () => {
             <li>
               <NavLink
                 to="/blogs"
-                aria-label="Home"
-                title="Home"
                 className={({ isActive }) => (isActive ? "text-gFrom" : "")}
               >
                 Blogs

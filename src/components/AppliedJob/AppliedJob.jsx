@@ -63,16 +63,19 @@ const AppliedJob = () => {
       {/* Banner Section */}
       <div className="bg-base-200 text-center flex justify-between items-center">
         <img className="h-16 md:h-32" src={vector1} alt="" />
-        <h3 className="text-xl font-extrabold py-10">Applied Job</h3>
+        <h3 className="text-gray-600 text-xl font-extrabold py-10">
+          Applied Job
+        </h3>
         <img className="h-16 md:h-32 -mt-32" src={vector2} alt="" />
       </div>
 
+      {/* Filter Section */}
       <div className="w-[95%] md:w-[80%] mx-auto flex flex-col gap-4 py-16">
         <div className="flex md:justify-end">
           <select
             value={selected}
             onChange={handleFilter}
-            className="select select-bordered"
+            className="select select-bordered text-subTitle"
           >
             <option value="All">Filter By</option>
             <option value="Onsite">Onsite</option>
@@ -80,12 +83,13 @@ const AppliedJob = () => {
           </select>
         </div>
 
+        {/* Applied Job Section */}
         {jobData.length > 0 ? (
           jobData.map((singleData) => (
             <ReviewAppliedJob key={singleData.id} singleData={singleData} />
           ))
         ) : (
-          <div className="text-center ">
+          <div className="text-center">
             <div className="alert rounded-md shadow-md bg-white border">
               <div>
                 <svg
@@ -101,7 +105,7 @@ const AppliedJob = () => {
                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
-                <span>No data found!</span>
+                <span className="text-subTitle">No data found!</span>
               </div>
             </div>
           </div>

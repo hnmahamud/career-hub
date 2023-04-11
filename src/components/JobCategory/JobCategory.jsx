@@ -8,8 +8,10 @@ const JobCategory = ({ singleData }) => {
         <img className="h-10 w-10" src={logo} alt="" />
       </div>
       <div>
-        <h4 className="text-lg md:text-xl font-extrabold">{name}</h4>
-        <p>{jobs_available} jobs available</p>
+        <h4 className="text-gray-600 text-lg md:text-xl font-extrabold">
+          {name}
+        </h4>
+        <p className="text-subTitle">{jobs_available} jobs available</p>
       </div>
     </div>
   );
